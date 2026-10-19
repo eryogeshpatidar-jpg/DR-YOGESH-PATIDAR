@@ -151,7 +151,22 @@ function About() {
   return <section className="section about-section" id="about">
     <Reveal><Eyebrow number="01 / PROFILE">A little about my work</Eyebrow></Reveal>
     <div className="about-grid">
-      <Reveal className="about-heading"><h2>Curiosity is the<br/>first <em>instrument.</em></h2><p className="large-copy">Teaching, research and translation — connected by one idea: making engineering knowledge useful and accessible.</p></Reveal>
+      <Reveal className="about-heading">
+        <div className="profile-photo-frame">
+          <div className="profile-photo-fallback" aria-hidden="true">YP<span>.</span></div>
+          <img
+            className="profile-photo"
+            src="https://scholar.googleusercontent.com/citations?view_op=medium_photo&user=c997KPMAAAAJ&citpid=1"
+            alt="Dr. Yogesh Patidar — Google Scholar profile photograph"
+            loading="lazy"
+            referrerPolicy="no-referrer"
+            onError={(event) => { event.currentTarget.style.display = 'none'; }}
+          />
+          <span className="photo-caption"><span className="pulse-dot"/> GOOGLE SCHOLAR PROFILE PHOTO</span>
+        </div>
+        <h2>Curiosity is the<br/>first <em>instrument.</em></h2>
+        <p className="large-copy">Teaching, research and translation — connected by one idea: making engineering knowledge useful and accessible.</p>
+      </Reveal>
       <Reveal className="about-body" delay={0.1}><p>Dr. Yogesh Patidar is a Lecturer (Selection Grade-I) in Electronics and Telecommunication Engineering at Government Polytechnic College, Mandsaur, Madhya Pradesh. His work spans wireless sensor networks, energy-efficient clustering and routing, digital communication, and engineering education.</p><p>Alongside research and teaching, he has contributed to Hindi technical textbooks and translated NPTEL course material into Hindi, helping make specialist engineering content more accessible to learners.</p><div className="credential-row"><span className="credential-icon"><GraduationCap size={20}/></span><div><b>Ph.D. · M.Tech · B.E.</b><small>Wireless sensor networks · Digital communication · ECE</small></div></div></Reveal>
     </div>
   </section>;
