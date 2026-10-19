@@ -3,7 +3,7 @@ import { createRoot } from 'react-dom/client';
 import { Canvas, useFrame } from '@react-three/fiber';
 import { Float, Line, OrbitControls, Sparkles } from '@react-three/drei';
 import { motion, useReducedMotion } from 'framer-motion';
-import { ArrowDownRight, ArrowUpRight, BookOpen, BrainCircuit, BriefcaseBusiness, ChevronDown, Download, ExternalLink, GraduationCap, Mail, Menu, RadioTower, Scan, Sparkles, X } from 'lucide-react';
+import { ArrowDownRight, ArrowUpRight, BookOpen, BrainCircuit, BriefcaseBusiness, ChevronDown, Download, ExternalLink, GraduationCap, Mail, Menu, RadioTower, Scan, Sparkles as SparklesIcon, X } from 'lucide-react';
 import * as THREE from 'three';
 import './styles.css';
 
@@ -161,7 +161,7 @@ function Research() {
     { n: '01', icon: <RadioTower/>, title: 'Wireless sensor networks', desc: 'Designing connected sensor systems that communicate reliably with constrained energy and resources.', tags: ['WSN', 'Network topology'] },
     { n: '02', icon: <BrainCircuit/>, title: 'Energy-efficient clustering & routing', desc: 'Cluster-head selection, routing strategy and data transmission focused on network lifetime and throughput.', tags: ['Energy optimization', 'Routing'] },
     { n: '03', icon: <Scan/>, title: 'Machine learning for communication', desc: 'Traffic prediction, sensor-node classification and learning-informed communication protocols.', tags: ['Prediction', 'Classification'] },
-    { n: '04', icon: <Sparkles/>, title: 'Digital & wireless communication', desc: 'Spectrum sensing, MIMO/OFDM systems, signal estimation and communication fundamentals.', tags: ['MIMO / OFDM', 'Spectrum sensing'] },
+    { n: '04', icon: <SparklesIcon/>, title: 'Digital & wireless communication', desc: 'Spectrum sensing, MIMO/OFDM systems, signal estimation and communication fundamentals.', tags: ['MIMO / OFDM', 'Spectrum sensing'] },
   ];
   return <section className="section research-section" id="research">
     <Reveal><Eyebrow number="02 / RESEARCH">Questions that drive the work</Eyebrow><div className="section-heading-row"><h2>Research with a<br/><em>practical signal.</em></h2><p>From network architecture to learning-based methods, the focus is on communication that uses resources intelligently.</p></div></Reveal>
